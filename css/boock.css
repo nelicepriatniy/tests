@@ -107,6 +107,7 @@ body {
   .wrap {
     width: 1135px;
     height: 640 !important;
+    left: -90%;
   }
   .colum {
     display: grid;
