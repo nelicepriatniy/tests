@@ -17,6 +17,7 @@ body {
   width: 2121px;
   position: absolute;
   display: flex;
+  transition: transform 0.1s ease;
 }
 
 .scrollInfinite {
