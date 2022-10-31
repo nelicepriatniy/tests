@@ -43,6 +43,15 @@ function xy(x) {
     return { l, t };
 }
 
+
+function redraw () {
+    tope()
+    afte()
+    requestAnimationFrame(redraw)
+}
+
+requestAnimationFrame(redraw)
+
 if (window.innerWidth > 640) {
     window.addEventListener('mousemove', () => {
     afte()
@@ -91,13 +100,6 @@ if (window.innerWidth > 640) {
     }
 } else {
     
-    function redraw () {
-        tope()
-        afte()
-        requestAnimationFrame(redraw)
-    }
-
-    requestAnimationFrame(redraw)
 
 
     function tope() {
