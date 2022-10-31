@@ -25,7 +25,12 @@ let isdown = true;
 
 let loock = document.querySelector('.loock');
 
-
+document.querySelectorAll('.colums__display').forEach((el) => {
+    el.addEventListener('click', () => {
+        console.log(xy(el))
+        
+    })
+})
 
 function xy(x) {
     o = x;
@@ -85,30 +90,16 @@ if (window.innerWidth > 640) {
         })
     }
 } else {
-    window.addEventListener('mousedown', () => {
-    afte()
-    tope()
-    // redraw()
+    
+    function redraw () {
+        tope()
+        afte()
+        requestAnimationFrame(redraw)
+    }
 
-})
-window.addEventListener('mouseup', () => {
-    afte()
-    tope()
-    // redraw()
+    requestAnimationFrame(redraw)
 
-})
-window.addEventListener('mousemove', () => {
-    afte()
-    tope()
-    // redraw()
 
-})
-document.querySelectorAll('.colums__display').forEach((el) => {
-    el.addEventListener('click', () => {
-        console.log(xy(el))
-        
-    })
-})
     function tope() {
         document.querySelectorAll('.wert').forEach((el) => {
             if (el.getBoundingClientRect().y > window.innerHeight) {
@@ -135,12 +126,12 @@ document.querySelectorAll('.colums__display').forEach((el) => {
                 el.classList.add('after')
                 el.classList.remove('befor')
                 el.classList.remove('active')
-                el.style.left = xy(el).l - (1155 * 3) + 'px';
+                el.style.left = xy(el).l - (1155 *3) + 'px';
             } else if ((el.getBoundingClientRect().x + el.getBoundingClientRect().width) < 0) {
                 el.classList.remove('after')
                 el.classList.add('befor')
                 el.classList.remove('active')
-                el.style.left = xy(el).l + (1155 * 3) + 'px';
+                el.style.left = xy(el).l + (1155 *3) + 'px';
             } else if ((el.getBoundingClientRect().x + el.getBoundingClientRect().width) > 0 || el.getBoundingClientRect().x < window.innerWidth + 0) {
                 el.classList.remove('after')
                 el.classList.remove('befor')

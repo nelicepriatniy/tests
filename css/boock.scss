@@ -137,11 +137,11 @@ header {
     .wrap {
         width: 1135px;
         height: 640 !important;
-        left: -90%;
     }
     .colums__display{
-        position: absolute;
+        top: 0;
         left: 0;
+        position: absolute;
         &:nth-child(2) {
             left: 1155px;
         }
@@ -153,6 +153,7 @@ header {
     .wert {
         position: relative;
         top: 0;
+        left: 0;
         height: 1150px;
         &:nth-child(2){
             top: 660px;
