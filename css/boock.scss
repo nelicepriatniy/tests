@@ -17,7 +17,9 @@ body {
 .wrap {
     width: 2121px;
     position: absolute;
-    top: 0;
+    scale: 1.5;
+    display: flex;
+
 }
 
 .scrollInfinite {
@@ -25,13 +27,38 @@ body {
     overflow: visible !important;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .item_20 {
     width: 250px;
     height: 250px;
 }
+
+.colums__display{
+    position: absolute;
+    left: 0;
+    &:nth-child(2) {
+        left: 2050px;
+    }
+    &:nth-child(3) {
+        left: -2050px;
+
+    }
+}
+.wert {
+    position: relative;
+    top: 0;
+    height: 1150px;
+    &:nth-child(2){
+        top: 1150px;
+    }
+    &:nth-child(3){
+        top: -1150px;
+
+    }
+
+}
+
 
 .item__content {
     width: 100%;
@@ -58,7 +85,6 @@ body {
             text-decoration: underline;
             &::before {
                 margin-right: 15px;
-                content: url(./../assets/images/lookbook/icon.svg);
             }
         }
     }
