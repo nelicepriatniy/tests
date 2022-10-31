@@ -139,6 +139,30 @@ header {
         height: 640 !important;
         left: -90%;
     }
+    .colums__display{
+        position: absolute;
+        left: 0;
+        &:nth-child(2) {
+            left: 1155px;
+        }
+        &:nth-child(3) {
+            left: -1155px;
+    
+        }
+    }
+    .wert {
+        position: relative;
+        top: 0;
+        height: 1150px;
+        &:nth-child(2){
+            top: 660px;
+        }
+        &:nth-child(3){
+            top: -660px;
+    
+        }
+    
+    }
 
     .colum {
         display: grid;
