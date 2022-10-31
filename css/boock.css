@@ -141,10 +141,10 @@ header {
     position: absolute;
   }
   .colums__display:nth-child(2) {
-    left: 1155px;
+    left: 990px;
   }
   .colums__display:nth-child(3) {
-    left: -1155px;
+    left: -990px;
   }
   .wert {
     position: relative;
@@ -153,15 +153,15 @@ header {
     height: 1150px;
   }
   .wert:nth-child(2) {
-    top: 660px;
+    top: 495px;
   }
   .wert:nth-child(3) {
-    top: -660px;
+    top: -495px;
   }
   .colum {
     display: grid;
     height: 640px !important;
-    grid-template-columns: repeat(7, 145px);
+    grid-template-columns: repeat(6, 145px);
     -moz-column-gap: 20px;
          column-gap: 20px;
     row-gap: 20px;

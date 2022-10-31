@@ -108,12 +108,12 @@ if (window.innerWidth > 640) {
                 el.classList.add('bottom')
                 el.classList.remove('top')
                 el.classList.remove('topActive')
-                el.style.top = xy(el).t - (660 * 3) + 'px';
+                el.style.top = xy(el).t - (495 * 3) + 'px';
             } else if ((el.getBoundingClientRect().y + el.getBoundingClientRect().height) < 0) {
                 el.classList.remove('bottom')
                 el.classList.add('top')
                 el.classList.remove('topActive')
-                el.style.top = xy(el).t + (660 * 3) + 'px';
+                el.style.top = xy(el).t + (495 * 3) + 'px';
             } else if ((el.getBoundingClientRect().y + el.getBoundingClientRect().height) > 0 || el.getBoundingClientRect().y < window.innerHeight + 0) {
                 el.classList.remove('bottom')
                 el.classList.remove('bottom')
@@ -128,12 +128,12 @@ if (window.innerWidth > 640) {
                 el.classList.add('after')
                 el.classList.remove('befor')
                 el.classList.remove('active')
-                el.style.left = xy(el).l - (1155 *3) + 'px';
+                el.style.left = xy(el).l - (990 *3) + 'px';
             } else if ((el.getBoundingClientRect().x + el.getBoundingClientRect().width) < 0) {
                 el.classList.remove('after')
                 el.classList.add('befor')
                 el.classList.remove('active')
-                el.style.left = xy(el).l + (1155 *3) + 'px';
+                el.style.left = xy(el).l + (990 *3) + 'px';
             } else if ((el.getBoundingClientRect().x + el.getBoundingClientRect().width) > 0 || el.getBoundingClientRect().x < window.innerWidth + 0) {
                 el.classList.remove('after')
                 el.classList.remove('befor')

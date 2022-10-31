@@ -143,10 +143,10 @@ header {
         left: 0;
         position: absolute;
         &:nth-child(2) {
-            left: 1155px;
+            left: 990px;
         }
         &:nth-child(3) {
-            left: -1155px;
+            left: -990px;
     
         }
     }
@@ -156,10 +156,10 @@ header {
         left: 0;
         height: 1150px;
         &:nth-child(2){
-            top: 660px;
+            top: 495px;
         }
         &:nth-child(3){
-            top: -660px;
+            top: -495px;
     
         }
     
@@ -168,7 +168,7 @@ header {
     .colum {
         display: grid;
         height: 640px !important ;
-        grid-template-columns: repeat(7, 145px);
+        grid-template-columns: repeat(6, 145px);
         column-gap: 20px;
         row-gap: 20px;
         grid-template-rows: repeat(4, 145px);
