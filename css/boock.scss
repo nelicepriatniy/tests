@@ -38,10 +38,10 @@ body {
     position: absolute;
     left: 0;
     &:nth-child(2) {
-        left: 2050px;
+        left: 2100px;
     }
     &:nth-child(3) {
-        left: -2050px;
+        left: -2100px;
 
     }
 }
@@ -50,10 +50,10 @@ body {
     top: 0;
     height: 1150px;
     &:nth-child(2){
-        top: 1150px;
+        top: 1200px;
     }
     &:nth-child(3){
-        top: -1150px;
+        top: -1200px;
 
     }
 
@@ -118,9 +118,13 @@ body {
     }
 }
 
+header {
+    z-index: 1002;
+}
+
 .footer {
     position: relative;
-    z-index: 2;
+    z-index: 1002;
     backdrop-filter: blur(7.5px);
 }
 
